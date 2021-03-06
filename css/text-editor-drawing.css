@@ -1,0 +1,201 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .text-editor-draw-container{
+    width: 700px;
+    perspective: 100px;
+  }
+  .text-editor-draw{
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    width: 600px;
+    height: 500px;
+    perspective: 700px;
+  }
+  .ted-left, .ted-right{
+      flex-basis: 50%;
+  }
+
+  .ted-left{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  .ted-top{
+    font-family: "Open Sans","Helvetica","Arial",sans-serif;
+    background-color: #15314b;
+    box-shadow: 0 0 5px 0 rgba(0,0,0,.4);
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 2;
+  }
+  
+  .ted-top h1{
+    font-size: 14px;
+    margin-left: 10px;
+  }
+  .ted-right{
+    margin-left: 10px;
+  }
+  .ted-section{
+    display: flex;
+    flex-direction: column;
+    background-color: #02203c;
+    border: 4px solid #15314b;
+    border-radius: 2px;
+    width: 100%;
+  }
+  
+  .ted-section-content{
+    padding: 10px 10px 30px 10px;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: "Open Sans","Helvetica","Arial",sans-serif;
+  }
+  .ted-section-content h2{
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  .dark{
+    background-color: #1f384e;
+    height: 15px;
+    margin-bottom: 4px;
+    border-radius: 4px;
+  }
+  .medium{
+    width: 230px;
+  }
+  .short{
+    width: 200px;
+  }
+  
+  .long{
+    width: 260px;
+  }
+  
+  /* Run-part */
+  
+  .btn{
+    align-self: stretch;
+    padding: 0 15px;
+    color: #fff;
+    border: none;
+    background-color: #0046c7;
+    font-family: "Open Sans","Helvetica","Arial",sans-serif;
+  font-size: 14px;
+  }
+  
+  /* span decoration */
+  
+  span{
+    height: 13px;
+    display: inline-block;
+    border-radius: 4px;
+    margin-right: 4px;
+  }
+
+  .mar div{
+    margin-bottom: 4px;
+  }
+  
+  .green{
+    background-color: #78c078;
+  }
+  
+  .orange{
+    background-color: #be8a28;
+  }
+  
+  .blue{
+    background-color: #5e5efb;
+  }
+  
+  .light-blue{
+    background-color: #48aca2;
+  }
+  
+  .purple{
+    background-color: #5a395a;
+  }
+  
+  .size1{
+    width: 15px;
+  }
+  
+  .size2{
+    width: 20px
+  }
+  
+  .size3{
+    width: 30px;
+  }
+  
+  .size4{
+    width: 40px;
+  }
+  
+  .size5{
+    width: 45px;
+  }
+
+
+  /* left-lower */
+
+  .lower div{
+    padding: 10px;
+    margin-bottom: 15px;
+    background-color: #15314b;
+    border-radius: 4px;
+  }
+
+  .lower,
+  .lower-right{
+    overflow:scroll;
+    height: 150px;
+    scrollbar-width: thin;
+    scrollbar-color: #a0a0a0 transparent;
+  }
+
+  .down{
+    margin: 5px 5px 0 0;
+    box-shadow: 0px 27.5px 40px -17.5px rgba(0,0,0,.4),46.2px 37.5px 40px -17.5px rgba(0,0,0,.4);
+  }
+
+
+  /* lower-right */
+
+  .lower-right-div{
+    padding: 7px 10px;
+    margin-bottom: 15px;
+    background-color: #15314b;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+  }
+
+  .ted-check-row{
+    width: 60%;
+    height: 13px;
+    border-radius: 4px;
+  }
+
+  .green-check{
+    background-color:#3f8854;
+  }
+
+ .fa-check-circle{
+    width: 25px;
+    color: #3f8854;
+    margin-right: 10px;
+    font-size: 28px;
+    font-weight: 50;
+  }
+
+.ted-submit{
+  background-color: #008529;
+}
