@@ -1,0 +1,110 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.companies {
+    background-color: #fff;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 1200px;
+    box-shadow: 0 0 60px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    justify-content: space-between;
+    padding: 60px 40px;
+    position: relative;
+  }
+  .companies h1{
+      margin-bottom: 10px;
+  }
+  .companies p{
+    margin-bottom: 50px;
+    color: #445d6e;
+}
+  .side-col{
+    background: linear-gradient(to right, white 30%, rgba(255, 255, 255, 0));
+    position: absolute;
+    height: 100%;
+    width: 40px;
+    z-index: 1;
+  }
+
+
+  .company-logo-container-1  .companies-1-logo {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    animation: right-to-left-1 30s linear infinite;
+  }
+  
+  .company-logo-container-1 .companies-logo {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    /*   top: 20px; */
+    right: -100%;
+    animation: right-to-left-1 30s linear infinite;
+    max-width: 100%;
+  }
+  
+  .customers-logo {
+    flex: 1 1 200px;
+    margin: 20px;
+  }
+
+  .company-logo-container-2  .companies-1-logo {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    animation: left-to-right-1 30s linear infinite;
+  }
+
+  .company-logo-container-2 .companies-logo {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    /*   top: 20px; */
+    left: -100%;
+    animation: left-to-right-1 30s linear infinite;
+    max-width: 100%;
+  }
+
+  .customers-logo img {
+    width: 100%;
+    filter: grayscale(100%) brightness(0%);
+    opacity: 0.2;
+  }
+
+.company-logo-container-1,
+.company-logo-container-2{
+    position: relative;
+    height: 100px;
+    width: 1400px;
+}
+
+  
+  /* animation */
+  
+  @keyframes right-to-left-1 {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
+  @keyframes left-to-right-1 {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(100%);
+    }
+  }
+  
